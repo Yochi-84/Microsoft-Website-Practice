@@ -1,8 +1,14 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Segoe UI", SegoeUI, "Microsoft JhengHei", "微軟正黑體", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.header {
+.nav {
   display: flex;
   align-items: center;
   padding: 0 5%;
@@ -219,16 +225,106 @@ body {
   .follow {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 16px;
+    margin-bottom: 48px;
 
     span {
       font-size: 15px;
       line-height: 20px;
       color: rgba(0, 0, 0, 0.6);
     }
+
+    img {
+      width: 28px;
+      height: 28px;
+    }
+  }
+}
+
+.footer {
+  padding: 36px 5% 18px;
+  background-color: #f2f2f2;
+}
+
+.bottom-nav {
+  display: flex;
+  margin-bottom: 38px;
+
+  &-list {
+    margin-right: 24px;
+    min-width: 216px;
+
+    li {
+      margin-bottom: 16px;
+      height: 16px;
+      line-height: 16px;
+    }
+
+    :first-child {
+      height: 20px;
+      font-size: 15px;
+      color: #616161;
+      line-height: 20px;
+      font-weight: 600;
+    }
+
+    :not(:first-child) a {
+      font-size: 12px;
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.9);
+      cursor: pointer;
+      line-height: 16px;
+      font-weight: 400;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    font-size: 12px;
+    line-height: 18px;
+    text-decoration: none;
+    color: #000;
+  }
+}
+
+.language {
+  cursor: pointer;
+
+  &:hover a {
+    text-decoration: underline;
   }
 
-  .footer {
-    background-color: #f2f2f2;
+  i {
+    margin-right: 8px;
+    font-size: 18px;
+    vertical-align: middle;
   }
+}
+
+.about {
+  display: flex;
+  align-items: center;
+
+  a {
+    display: inline-block;
+    padding: 0 13.5px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.copyright {
+  font-size: 11px;
+  line-height: 16px;
+  color: #616161;
 }
