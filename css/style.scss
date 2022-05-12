@@ -53,6 +53,11 @@ body {
 
   .nav-item {
     padding: 16px 8px 10px;
+
+    a,
+    i {
+      vertical-align: middle;
+    }
   }
 
   .user {
@@ -180,7 +185,7 @@ body {
       }
 
       .no-tag {
-        margin-top: 30px;
+        margin-top: 50px;
       }
 
       .product-card-text {
@@ -250,6 +255,15 @@ body {
   display: flex;
   margin-bottom: 38px;
 
+  h4 {
+    margin-bottom: 12px;
+    height: 20px;
+    font-size: 15px;
+    color: #616161;
+    line-height: 20px;
+    font-weight: 600;
+  }
+
   &-list {
     margin-right: 24px;
     min-width: 216px;
@@ -260,15 +274,7 @@ body {
       line-height: 16px;
     }
 
-    :first-child {
-      height: 20px;
-      font-size: 15px;
-      color: #616161;
-      line-height: 20px;
-      font-weight: 600;
-    }
-
-    :not(:first-child) a {
+    a {
       font-size: 12px;
       text-decoration: none;
       color: rgba(0, 0, 0, 0.9);
