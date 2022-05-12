@@ -22,6 +22,7 @@ module.exports = {
     "color-function-notation": "legacy",
     "selector-no-qualifying-type": null,
     "max-line-length": null,
+    "no-descending-specificity": null,
     "alpha-value-notation": "number",
     "order/properties-order": [
       "position",
