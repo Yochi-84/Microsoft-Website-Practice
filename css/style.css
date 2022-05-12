@@ -10,6 +10,10 @@ body {
   font-family: "Segoe UI", SegoeUI, "Microsoft JhengHei", "微軟正黑體", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.menu-controller {
+  display: none;
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24,15 +28,59 @@ body {
 
 @media screen and (max-width: 1082px) {
   .nav {
-    padding: 0 2%;
+    padding: 0 25px;
   }
 }
 
-.nav .border-1 {
+@media screen and (max-width: 840px) {
+  .nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 5px;
+  }
+}
+
+.nav .hamburger-menu {
+  display: none;
+  padding: 0 10px;
+  font-size: 28px;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 840px) {
+  .nav .hamburger-menu {
+    display: block;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+}
+
+.nav .hamburger-menu:active {
+  border-color: #000;
+}
+
+@media screen and (max-width: 900px) {
+  .nav .lgp-item {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .nav .lg-item {
+    display: none;
+  }
+}
+
+.nav .logo,
+.nav li {
   border: 1px dotted transparent;
 }
 
-.nav .border-1:active {
+.nav .logo:active,
+.nav li:active {
   border: 1px dotted #000;
 }
 
@@ -64,6 +112,12 @@ body {
           flex-grow: 1;
 }
 
+@media screen and (max-width: 840px) {
+  .nav .nav-list {
+    display: none;
+  }
+}
+
 .nav .nav-item {
   padding: 16px 8px;
 }
@@ -71,6 +125,12 @@ body {
 .nav .nav-item span,
 .nav .nav-item i {
   vertical-align: middle;
+}
+
+@media screen and (max-width: 840px) {
+  .nav .sub-menu {
+    display: none;
+  }
 }
 
 .nav .icon-list {
@@ -88,6 +148,16 @@ body {
   }
   .nav .icon-list li:not(:first-of-type) i {
     font-size: 18px;
+  }
+}
+
+.nav .more {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .nav .more {
+    display: block;
   }
 }
 
@@ -215,6 +285,12 @@ body {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner .btn-block {
+    display: block;
   }
 }
 
@@ -383,13 +459,13 @@ body {
 
 @media screen and (max-width: 1082px) {
   .product-card {
+    margin-bottom: 40px;
     width: 48.8%;
   }
 }
 
 @media screen and (max-width: 540px) {
   .product-card {
-    margin-bottom: 40px;
     width: 100%;
   }
 }
