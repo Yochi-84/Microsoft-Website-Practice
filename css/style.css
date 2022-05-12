@@ -58,17 +58,22 @@ body {
           flex-grow: 1;
 }
 
-.nav .nav-list .nav-list-item {
-  padding: 16px 8px 10px;
-}
-
 .nav .nav-item {
-  padding: 16px 8px 10px;
+  padding: 16px 8px;
 }
 
 .nav .nav-item a,
 .nav .nav-item i {
   vertical-align: middle;
+}
+
+.nav .icon-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav .user {
@@ -119,7 +124,17 @@ body {
   max-width: 520px;
 }
 
+.content .banner .banner-item span {
+  display: inline-block;
+  padding: 4px 14px 6px;
+  margin-bottom: 3px;
+  font-size: 15px;
+  background-color: #ffb900;
+  font-weight: 700;
+}
+
 .content .banner .banner-item h2 {
+  position: relative;
   margin-bottom: 12px;
   font-size: 34px;
   line-height: 40px;

@@ -45,19 +45,20 @@ body {
   .nav-list {
     display: flex;
     flex-grow: 1;
-
-    .nav-list-item {
-      padding: 16px 8px 10px;
-    }
   }
 
   .nav-item {
-    padding: 16px 8px 10px;
+    padding: 16px 8px;
 
     a,
     i {
       vertical-align: middle;
     }
+  }
+
+  .icon-list {
+    display: flex;
+    align-items: center;
   }
 
   .user {
@@ -100,7 +101,17 @@ body {
       left: 6%;
       max-width: 520px;
 
+      span {
+        display: inline-block;
+        padding: 4px 14px 6px;
+        margin-bottom: 3px;
+        font-size: 15px;
+        background-color: #ffb900;
+        font-weight: 700;
+      }
+
       h2 {
+        position: relative;
         margin-bottom: 12px;
         font-size: 34px;
         line-height: 40px;
