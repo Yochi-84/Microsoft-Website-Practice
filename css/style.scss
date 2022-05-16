@@ -332,7 +332,10 @@ body {
     }
 
     @include md {
-      display: block;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
     }
   }
 
@@ -344,6 +347,10 @@ body {
     border: 0;
     cursor: pointer;
     font-weight: 600;
+
+    @include sm {
+      margin-right: 10px;
+    }
 
     span {
       position: relative;
